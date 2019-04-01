@@ -1,17 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 * {
 	box-sizing: border-box;
 	transition: all .4s ease-in-out;
 }
 
+html {
+	font-size: 10px;
+}
+
 body {
 	font-size: 10px;
-	font-family: 'Colibri', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
 .section-top {
 	background-image: url('../img/cover.jpg');
 	height: 60rem;
-	width: 100vw-100px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -40,11 +46,11 @@ body {
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 1.3rem;
+	font-size: 2.3rem;
 }
 
 .ref--nav {
-	font-size: 1rem;
+	font-size: 1.4rem;
 	margin-left: 2.5rem;
 }
 
@@ -81,7 +87,7 @@ body {
 section {
 	position: relative;
 	z-index: 2;
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 	padding-top: 8rem;
 	color: #415161;
@@ -90,8 +96,8 @@ section {
 .heading {
 	text-transform: capitalize;
 	margin-top: 0;
-	font-size: 4.9rem;
-	line-height: .9;
+	font-size: 8rem;
+	line-height: 1;
 }
 
 .text {
@@ -103,14 +109,15 @@ section {
 }
 
 .btn {
-	padding: 1.2rem 2.2rem;
-	border: 1px solid #d5d9dd;
+	padding: 2.2rem 2.7rem;
+	border: 2px solid #d5d9dd;
 	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #76818e;
+	color: #415061;
 	font-weight: bold;
-	font-size: .7rem;
+	font-size: 1.2rem;
+	text-align: center;
 }
 
 .btn:hover,
@@ -125,8 +132,18 @@ section {
 	line-height: 1.5;
 }
 
-.parag--ref {
+/* .parag--ref {
 	padding: 2rem 0 1rem 5rem;
+} */
+
+.pictures {
+	text-align: justify;
+}
+
+.picture {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .refdiv {
@@ -138,11 +155,12 @@ section {
 	display: inline-block;
 	text-decoration: none;
 	color: #2179ef;
-	font-size: .7rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	font-weight: 900;
 	vertical-align: middle;
 	position: relative;
+	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
 
@@ -163,8 +181,4 @@ section {
 .afterp:focus,
 .afterp:active {
 	filter: invert(50%);
-}
-
-.trip .ba-grid:first-of-type {
-	margin-bottom: 30px;
 }
